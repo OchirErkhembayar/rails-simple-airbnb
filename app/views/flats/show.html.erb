@@ -1,10 +1,66 @@
-<h3 class="border-bottom border-1"><%= @flat.name %>
-<%= link_to edit_flat_path do %>
-  <i class="fas fa-edit" id="links"></i>
-<% end %>
-<%= link_to flat_path(@flat), method: :delete, data: { confirm: "Are you sure?" } do %>
-  <i class="fas fa-trash-alt" id="links"></i>
-<% end %></h3>
-<p>Address: <%= @flat.address %></p>
-<p>Price per night: <%= @flat.price_per_night.to_s %></p>
-<p>Maximum guest capacity: <%= @flat.number_of_guests %></p>
+<div class="banner">
+</div>
+
+<div class="container main-body" style="margin-top: -73px">
+  <div class="row">
+    <div class="col-8">
+      <div class="card my-3">
+        <div class="card-body shadow-sm">
+          <h3 class="card-title"><%= @flat.name %></h3>
+          <h4 class="card-subtitle mb-2 text-muted"><%= @flat.address %></h4>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body shadow-sm">
+          <h4 class="card-title">Some more information</h4>
+          <p class="card-subtitle mb-2" style="height: 350px;">This is a great flat. I am writing random stuff! Come stay here and eat the lovely local ramen. You might get attacked by some bad guys and die but it's worth the risk.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card my-3">
+        <div class="card-body shadow-sm">
+          <h4 class="card-title">Book this place</h4>
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">From</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">To</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="dd/mm/yyyy">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 w-100">Book</button>
+          </form>
+        </div>
+      </div>
+      <div class="card my-3">
+        <div class="card-body shadow-sm">
+          <h4 class="card-title">Details</h4>
+          <div class="d-flex justify-content-left">
+            <p class="card-subtitle mb-2"><i class="fas fa-user-friends"></i><%= @flat.number_of_guests %></p>
+            <p class="card-subtitle mb-2">$<%= @flat.price_per_night.to_s %></p>
+          </div>
+        </div>
+      </div>
+      <div class="card my-3">
+        <div class="card-body shadow-sm">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-subtitle m-0">Share</h5>
+            <div>
+              <a href="https://www.facebook.com" target="_blank" style="color: black; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" style="color: black; font-size: 30px;">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" style="color: black; font-size: 30px;">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
