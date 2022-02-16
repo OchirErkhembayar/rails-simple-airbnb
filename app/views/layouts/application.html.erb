@@ -12,9 +12,11 @@
 
   <body>
     <div class="navbar d-flex align-items-center p-1">
-      <div class="container my-0">
+      <div class="container my-0 d-flex align-items-center justify-content-between">
         <h3><%= link_to 'Crappy AirBnB', flats_path %></h3>
-        <p class="btn btn-primary white-text"><%= link_to "Add flat", new_flat_path %></p>
+        <div>
+          <p class="btn btn-primary white-text"><%= link_to "Add flat", new_flat_path %></p>
+        </div>
       </div>
     </div>
     <div class="background-col border-top border-4">
