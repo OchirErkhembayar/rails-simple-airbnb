@@ -1,0 +1,87 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.main-body {
+  width: 700px;
+  margin: 30px auto;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+a:hover {
+  color: white;
+}
+
+h3 a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+h3 a:hover {
+  color: black;
+  opacity: 1;
+}
+
+h5 a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+h5 a:hover {
+  color: black;
+  opacity: 1;
+}
+
+.white-text {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container p {
+  align-items: center;
+  margin: 10px;
+}
+
+.container h3 {
+  align-items: center;
+  margin: 10px;
+}
+
+.container h4 {
+  align-items: center;
+  margin: 10px;
+}
+
+.navbar {
+  background-color: rgb(241, 240, 240);
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#links {
+  color: black;
+  opacity: 0.7;
+}

@@ -1,0 +1,10 @@
+<h3 class="border-bottom border-1"><%= @flat.name %>
+<%= link_to edit_flat_path do %>
+  <i class="fas fa-edit" id="links"></i>
+<% end %>
+<%= link_to flat_path(@flat), method: :delete, data: { confirm: "Are you sure?" } do %>
+  <i class="fas fa-trash-alt" id="links"></i>
+<% end %></h3>
+<p>Address: <%= @flat.address %></p>
+<p>Price per night: <%= @flat.price_per_night.to_s %></p>
+<p>Maximum guest capacity: <%= @flat.number_of_guests %></p>

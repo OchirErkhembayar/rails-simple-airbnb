@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar border-bottom border-4 d-flex align-items-center">
+      <div class="container">
+        <h3><%= link_to 'Crappy AirBnB', flats_path %></h3>
+        <p class="btn btn-secondary white-text"><%= link_to "create flat", new_flat_path %></p>
+      </div>
+    </div>
+    <div class="container main-body">
+      <%= yield %>
+    </div>
   </body>
 </html>
